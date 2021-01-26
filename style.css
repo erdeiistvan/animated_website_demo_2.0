@@ -1,0 +1,144 @@
+.background-purple {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #BF126C;
+    z-index: 1;
+}
+
+.background-blue {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: #0E0E83;
+    z-index: 2;
+    margin: 0px 0px 0px 0px;
+    transition: margin 0.6s ease-in;
+}
+
+.background-blue.dynamic {
+    margin: 0px 300px 0px 300px;
+    transition: margin 0.6s ease-in;
+}
+
+.main-heading-wrapper {
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 100%;
+    z-index: 3;
+}
+
+.main-heading {
+    position: relative;
+    float: left;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 50px 0px 50px;
+}
+
+.main-heading-button {
+    position: relative;
+    float: right;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.line {
+    position: absolute;
+    background-color: #FFFFFF;
+    width: 50px;
+    height: 10px;
+    border-radius: 3px;
+    transition: margin 0.2s ease-in;
+}
+
+.line.top {
+    margin: 10px 10px auto;
+}
+
+.line.mid {
+    margin: 30px 10px auto;
+    opacity: 1;
+    transition: opacity 0.2s linear, margin 0.2s ease-in;
+}
+
+.line.bot {
+    margin: 50px 10px auto;
+}
+
+.line.top.dynamic {
+    margin: 30px 10px auto;
+    transform: rotate(45deg);
+    transition: transform 0.1s linear, margin 0.1s ease-in;
+}
+
+.line.mid.dynamic {
+    margin: 30px -60px auto;
+    opacity: 0;
+    transition: opacity 0.2s linear, margin 0.2s ease-in;
+}
+
+.line.bot.dynamic {
+    margin: 30px 10px auto;
+    transform: rotate(-45deg);
+    transition: transform 0.1s linear, margin 0.1s ease-in;
+}
+
+.content {
+    position: relative;
+    top: 100px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 50px 0px 50px;
+    opacity: 1;
+    transition: opacity 3s ease-in;
+}
+
+.content.dynamic {
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
+
+.menu-wrapper {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: -150px;
+    text-align: center;
+    margin: -750px 50% 0px 50%;
+    transition: margin 1.5s linear;
+}
+
+.menu-wrapper.dynamic {
+    margin: -500px 50% 0px 50%;
+    transition: margin 0.25s linear;
+}
+
+.menu-list {
+    list-style-type: none;
+}
+
+.menu-item {
+    color: #FFFFFF;
+    font-family: sans-serif;
+    font-size: 35px;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+    transition: font-size 0.1s ease-in, color 0.1s ease-in;
+}
+
+.menu-item.selected {
+    font-size: 45px;
+    color: #FF0000;
+    transition: font-size 0.1s ease-in, color 0.1s ease-in;
+}
